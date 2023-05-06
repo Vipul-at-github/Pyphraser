@@ -35,7 +35,7 @@ def  rephrase(request):
         # prompt = request.POST['prompt']
         # message = request.data['prompt']
         message = request.POST['prompt']
-        openai.api_key = "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"
+        openai.api_key = "OPEN_AI_KEY_HERE"
         prompt = f"Paraphrase this and give two results -{message}"
         response = openai.Completion.create(
             engine="text-davinci-003",
